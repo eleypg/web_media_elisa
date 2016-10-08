@@ -1,0 +1,16 @@
+#zone-1{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+}
+
+div.random-div{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+}
+
+#button{
+	color: red;
+}

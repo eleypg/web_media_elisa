@@ -1,0 +1,244 @@
+1. Get the path of your current folder. How many levels are you from root folder? 5.
+
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ pwd
+		/Users/elisa/Desktop/web-media-centro/web-v-c-5
+
+
+2. Get a list of the content of your current folder.
+
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ ls
+		README.md		ejercicio_1_elisa
+
+
+3. Open the Finder and change to the current folder and compare the list with the content showed in the Finder.
+**
+
+
+4. Now list ALL the content and compare again.
+
+**
+
+5. Change to the Desktop folder and get the path of your current folder.
+
+		MacBook-Pro-de-Elisa-2:~ elisa$ cd Desktop
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ pwd
+		/Users/elisa/Desktop
+
+
+6. Create the following folder structure:
+
+test
+
+	|- hello
+
+		|- your_name
+
+	|- world
+
+
+		MacBook-Pro-de-Elisa-2:~ elisa$ cd Desktop
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ mkdir test
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ cd test
+		MacBook-Pro-de-Elisa-2:test elisa$ mkdir hello
+		MacBook-Pro-de-Elisa-2:test elisa$ mkdir world
+		MacBook-Pro-de-Elisa-2:test elisa$ cd hello
+		MacBook-Pro-de-Elisa-2:hello elisa$ mkdir elisa_hernandez
+		MacBook-Pro-de-Elisa-2:hello elisa$ pwd
+		/Users/elisa/Desktop/test/hello
+		MacBook-Pro-de-Elisa-2:hello elisa$ 
+
+
+
+7. Change to the “world” folder and execute:
+
+	$ echo "test" >> test_a.txt
+
+	$ echo "test" >> test_b.txt
+
+
+		MacBook-Pro-de-Elisa-2:world elisa$ echo "test" >> test_a.txt
+		MacBook-Pro-de-Elisa-2:world elisa$ echo "test" >> test_b.txt
+
+
+
+8. List the content of “world” folder.
+
+		MacBook-Pro-de-Elisa-2:world elisa$ ls
+		test_a.txt	test_b.txt
+
+
+
+9. Remove the file “test_a.txt”.
+
+		MacBook-Pro-de-Elisa-2:world elisa$ ls
+		test_a.txt	test_b.txt
+		MacBook-Pro-de-Elisa-2:world elisa$ rm test_a.txt
+		MacBook-Pro-de-Elisa-2:world elisa$ ls
+		test_b.txt
+
+
+
+10. Copy the “test_b.txt” to the folder with your name.
+
+		MacBook-Pro-de-Elisa-2:world elisa$ MacBook-Pro-de-Elisa-2:world elisa$ cp /Users/elisa/Desktop/test/world/test_b.txt /Users/elisa/Desktop/test/hello/elisa_hernandez
+
+
+
+11. Move all test folder to your “home”.
+
+		MacBook-Pro-de-Elisa-2:elisa_hernandez elisa$ MV /Users/elisa/Desktop/test /Users/elisa/Documents
+
+
+
+12. Remove the folder “world”.
+
+		MacBook-Pro-de-Elisa-2:test elisa$ rm -r world
+
+
+
+13. See what echo command do with its manual.
+**
+
+
+
+
+
+Chapter 2 - Exercises
+
+1. Clone the course repository.
+
+
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ git clone https://github.com/diegoMontesinos/web-media-centro.git
+		Cloning into 'web-media-centro'...
+		remote: Counting objects: 159, done.
+		remote: Total 159 (delta 0), reused 0 (delta 0), pack-reused 159
+		Receiving objects: 100% (159/159), 3.18 MiB | 1.94 MiB/s, done.
+		Resolving deltas: 100% (31/31), done.
+		Checking connectivity... done.
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ 
+
+
+
+2. Create a GitHub account and create a test repository.
+
+		https://github.com/eleypg/web-v-c-5.git
+
+
+
+3. Clone your test repository, create folder “exercises” and put the previous “test” folder, and the results.
+
+
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ git clone https://github.com/eleypg/web-v-c-5.git
+		Cloning into 'web-v-c-5'...
+		remote: Counting objects: 6, done.
+		remote: Compressing objects: 100% (2/2), done.
+		remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+		Unpacking objects: 100% (6/6), done.
+		Checking connectivity... done.
+		MacBook-Pro-de-Elisa-2:Desktop elisa$ cd web-v-c-5
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ mkdir ejercicios
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ MV /Users/elisa/Documents/test /Users/elisa/Desktop/web-v-c-5/ejercicios
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ ls
+		README.md	ejercicios
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ 
+
+
+
+4. Stage and make a commit.
+
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git init
+		Reinitialized existing Git repository in /Users/elisa/Desktop/web-v-c-5/.git/
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git status
+		On branch master
+		Your branch is up-to-date with 'origin/master'.
+		Untracked files:
+		  (use "git add <file>..." to include in what will be committed)
+
+			ejercicios/
+
+		nothing added to commit but untracked files present (use "git add" to track)
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git add ejercicios
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git commit -m "Primer ejercicio de commit"
+		[master 782377b] Primer ejercicio de commit
+		 Committer: eleypg <elisa@MacBook-Pro-de-Elisa-2.local>
+		Your name and email address were configured automatically based
+		on your username and hostname. Please check that they are accurate.
+		You can suppress this message by setting them explicitly:
+
+		    git config --global user.name "Your Name"
+		    git config --global user.email you@example.com
+
+		After doing this, you may fix the identity used for this commit with:
+
+		    git commit --amend --reset-author
+
+		 1 file changed, 1 insertion(+)
+		 create mode 100644 ejercicios/test/hello/elisa_hernandez/test_b.txt
+
+
+
+5. Push your changes.
+
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git push
+		Counting objects: 7, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (2/2), done.
+		Writing objects: 100% (7/7), 487 bytes | 0 bytes/s, done.
+		Total 7 (delta 0), reused 0 (delta 0)
+		To https://github.com/eleypg/web-v-c-5.git
+		   044c178..782377b  master -> master
+
+
+
+6. See the changes in GitHub web page.
+
+
+
+7. Ask a classmate clone your repo.
+
+
+
+8. Edit your README writing your name and update your changes.
+
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git init
+		Reinitialized existing Git repository in /Users/elisa/Desktop/web-v-c-5/.git/
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git status
+		On branch master
+		Your branch is up-to-date with 'origin/master'.
+		Changes not staged for commit:
+		  (use "git add <file>..." to update what will be committed)
+		  (use "git checkout -- <file>..." to discard changes in working directory)
+
+			modified:   README.md
+
+		no changes added to commit (use "git add" and/or "git commit -a")
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git add README.md
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git commit -m "Primer cambio a readme"
+		[master c833810] Primer cambio a readme
+		 Committer: eleypg <elisa@MacBook-Pro-de-Elisa-2.local>
+		Your name and email address were configured automatically based
+		on your username and hostname. Please check that they are accurate.
+		You can suppress this message by setting them explicitly:
+
+		    git config --global user.name "Your Name"
+		    git config --global user.email you@example.com
+
+		After doing this, you may fix the identity used for this commit with:
+
+		    git commit --amend --reset-author
+
+		 1 file changed, 1 insertion(+), 1 deletion(-)
+		MacBook-Pro-de-Elisa-2:web-v-c-5 elisa$ git push
+		Counting objects: 3, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (3/3), done.
+		Writing objects: 100% (3/3), 357 bytes | 0 bytes/s, done.
+		Total 3 (delta 0), reused 0 (delta 0)
+		To https://github.com/eleypg/web-v-c-5.git
+		   782377b..c833810  master -> master
+
+
+
+9. Ask the same classmate update your repo.
+
+

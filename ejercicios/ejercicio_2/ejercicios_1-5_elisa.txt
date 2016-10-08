@@ -1,0 +1,23 @@
+1. What is a network protocol?
+  Es el sistema con reglas específicas que se encarga de establecer las comunicaciones entre dos o más aparatos.  
+
+
+
+2. What is the responsability of the physical layer?
+  Es la primera capa del modelo OSI, y en este suceden y se especifican los valores físicos y elétricos para la conexión que se llevará a cabo en las siguientes capas. 
+
+
+
+3. When we're talking about IP addresses, which layer are we refering to?
+  A la de Network - la tercera -.
+
+
+
+4. Name two differences between TCP and UDP protocols?
+  TCP es más confiable que UDP porque su protocolo es de conexión, y si un mensaje se envía y no es recibido por falta de conexión se alerta. En UDP no.
+  TCP ordena todos los paquetes de información en un stream, y UDP no, no ordena ni manitiene datos sobre la conexión, pero eso hace que trabaje más rápido al no tener que estar descifrando todas esas cosas.
+
+
+
+5. Describe how the HTTP protocol works (request, responde, etc) in a drawing.
+  Adjunto
