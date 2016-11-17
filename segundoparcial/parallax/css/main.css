@@ -1,0 +1,89 @@
+
+div#main-container {
+  width: 1260px;
+  height: 933px;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+div.layer {
+  position: absolute;
+  pointer-events: none;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: transform 0.1s;
+}
+
+div#layer-bg {
+  width: 1255px;
+  height: 933px;
+
+  left: 0px;
+  top: 0px;
+
+  background-image: url('../img/children_of_corn.jpg');
+}
+
+div#layer-6 {
+  width: 167px;
+  height: 933px;
+
+  left: 1125px;
+  top: 0px;
+
+  background-image: url('../img/children_of_corn_1.png');
+}
+
+div#layer-5 {
+  width: 132px;
+  height: 145px;
+
+  left: 320px;
+  top: 788px;
+
+  background-image: url('../img/children_of_corn_2.png');
+}
+
+div#layer-4 {
+  width: 1255px;
+  height: 107px;
+
+  left: 0px;
+  top: 826px;
+
+  background-image: url('../img/children_of_corn_3.png');
+}
+
+div#layer-3 {
+  width: 560px;
+  height: 433px;
+
+  left: 700px;
+  top: 500px;
+
+  background-image: url('../img/children_of_corn_5.png');
+}
+
+div#layer-2 {
+  width: 527px;
+  height: 537px;
+
+  left: 700px;
+  top: 0px;
+
+  background-image: url('../img/children_of_corn_6.png');
+}
+
+div#layer-1 {
+  width: 769px;
+  height: 915px;
+
+  left: 0px;
+  top: 0px;
+
+  background-image: url('../img/children_of_corn_4.png');
+}
